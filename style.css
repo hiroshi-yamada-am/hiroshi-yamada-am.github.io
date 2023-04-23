@@ -1,0 +1,25 @@
+body {
+    font-family: 'Meiryo', sans-serif;
+}
+
+img {
+    width: 576px;
+    height: 324px;
+}
+
+h1{
+    font-size:20pt;
+}
+
+h2{
+    font-size:16pt;
+    border-left: 10px solid orange;
+    border-bottom: 1px solid orange; /* 下ボーダーを、1px幅の破線、線色#CC3366に */
+    padding: 5px 10px; /* 上下パディング5ピクセル、左右パディング10px */
+}
+
+h3{
+    font-size:16pt;
+    font-weight:bold;
+}
+
