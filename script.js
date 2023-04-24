@@ -37,7 +37,7 @@ function clickTitle(){
     const titleElement = document.getElementById('title');
     const buttonTitleElement = document.getElementById('buttonTitle');
     const newImgTitleElement = document.createElement('img');
-    newImgTitleElement.src = "img/title.png";
+    newImgTitleElement.src = "title.png";
     titleElement.appendChild(document.createElement("br"));
     titleElement.appendChild(newImgTitleElement);
     buttonTitleElement.disabled = "disabled";
@@ -48,7 +48,7 @@ function clickMyPlan(){
     const myPlanElement = document.getElementById('myPlan');
     const buttonMyPlanElement = document.getElementById('buttonMyPlan');
     const newImgMyPlanElement = document.createElement('img');
-    newImgMyPlanElement.src = "img/patientsNumber.png";
+    newImgMyPlanElement.src = "patientsNumber.png";
     myPlanElement.appendChild(document.createElement("br"));
     myPlanElement.appendChild(newImgMyPlanElement);
     buttonMyPlanElement.disabled = "disabled";
@@ -59,7 +59,7 @@ function clickIssue(){
     const issueElement = document.getElementById('issue');
     const buttonIssueElement = document.getElementById('buttonIssue');
     const newImgIssueElement = document.createElement('img');
-    newImgIssueElement.src = "img/issue.png";
+    newImgIssueElement.src = "issue.png";
     issueElement.appendChild(document.createElement("br"));
     issueElement.appendChild(newImgIssueElement);
     buttonIssueElement.disabled = "disabled";
@@ -70,8 +70,20 @@ function clickProduct(){
     const productElement = document.getElementById('product');
     const buttonProductElement = document.getElementById('buttonProduct');
     const newImgProductElement = document.createElement('img');
-    newImgProductElement.src = "img/product.png";
+    newImgProductElement.src = "product.png";
     productElement.appendChild(document.createElement("br"));
     productElement.appendChild(newImgProductElement);
     buttonProductElement.disabled = "disabled";
 }
+
+
+
+function clickFinal(){
+    const finalElement = document.getElementById('final');
+    const buttonFinalElement = document.getElementById('buttonFinal');
+    const newElement = document.createElement('h3');
+    newElement.innerHTML = '実現を待ってくれている多くのために、内製開発（現状は委託開発メイン）でスピーディーに改善を進めたいものの、まだまだスキルと時間が足りず困っています。<br>もし共感した、興味あるなどあれば、人事面含め全力でサポートしますので、いつでも連絡ください！';
+    finalElement.appendChild(newElement);
+    buttonFinalElement.disabled = "disabled";
+}
+
