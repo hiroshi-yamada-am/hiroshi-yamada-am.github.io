@@ -82,7 +82,7 @@ function clickFinal(){
     const finalElement = document.getElementById('final');
     const buttonFinalElement = document.getElementById('buttonFinal');
     const newElement = document.createElement('h3');
-    newElement.innerHTML = '実現を待ってくれている多くのために、内製開発（現状は委託開発メイン）でスピーディーに改善を進めたいものの、まだまだスキルと時間が足りず困っています。<br>もし共感した、興味あるなどあれば、人事面含め全力でサポートしますので、いつでも連絡ください！';
+    newElement.innerHTML = '実現を待ってくれている多くのために、内製開発（現状は委託開発メイン）でスピーディーに改善を進めたいものの、<br>まだまだスキルと時間が足りず困っています。<br>もし共感した、興味あるなどあれば、人事面含め全力でサポートしますので、いつでも連絡ください！';
     finalElement.appendChild(newElement);
     buttonFinalElement.disabled = "disabled";
 }
