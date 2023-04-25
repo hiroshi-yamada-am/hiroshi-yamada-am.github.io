@@ -1,81 +1,89 @@
-<!DOCTYPE html>
-<html lang="ja">
+'use strict'
+// 1行目に記載している 'use strict' は削除しないでください
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">  <script type="text/javascript" src="modules/lodash.min.js"></script>
-  <script type="text/javascript" src="modules/test-boilerplate.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-</head>
+function clickBackground(){
+    const backGroundElement = document.getElementById('background');
+    const buttonBackgroundElement = document.getElementById('buttonBackground');
+    const newElement = document.createElement('ol');
+    const li1Element = document.createElement('li');
+    li1Element.innerHTML = '自分の企画への共感者・仲間づくり';
+    const li2Element = document.createElement('li');
+    li2Element.innerHTML = '実証実験用のアプリ内製化';
+    backGroundElement.appendChild(newElement);
+    newElement.appendChild(li1Element);
+    newElement.appendChild(li2Element);
+    buttonBackgroundElement.disabled = "disabled";
+}
 
-<body>
-  <h1>山田浩史のリアルガチ自己紹介！</h1>
-  <p>
-    <h2>参加した背景</h2>
-      <h3 id="background"></h3>
-      <button id=buttonBackground type="button" onclick = "clickBackground()">
-        詳細表示
-      </button>
-  </p>
-  <p>
-    <h2 >私の今の仕事</h2>
-      <h3 id="myJob"></h3>
-      <button id=buttonMyJob type="button" onclick = "clickMyJob()">
-        詳細表示
-      </button>
-  </p>
-  <p>
-    <h2>解決したいこと</h2>
-      <h3 id="myDream"></h3>
-      <button id=buttonMyDream type="button" onclick = "clickMyDream()">
-        詳細表示
-      </button>
-  </p>
-  <p>
-    <h2>私が推進している企画</h2>
-      <button id=buttonTitle type="button" onclick = "clickTitle()">
-        概要
-      </button>
-      <h3 id="title"></h3>
+function clickMyJob(){
+    const myJobElement = document.getElementById('myJob');
+    const buttonMyJobElement = document.getElementById('buttonMyJob');
+    const newElement = document.createElement('h3');
+    newElement.innerHTML = 'クルマづくりには全く関係ない仕事してます';
+    myJobElement.appendChild(newElement);
+    buttonMyJobElement.disabled = "disabled";
+}
 
-      <button id=buttonMyPlan type="button" onclick = "clickMyPlan()">
-        世の中の現状
-      </button>
-      <h3 id="myPlan"></h3>
+function clickMyDream(){
+    const myDreamElement = document.getElementById('myDream');
+    const buttonMyDreamElement = document.getElementById('buttonMyDream');
+    const newElement = document.createElement('h3');
+    newElement.innerHTML = 'クルマを卒業された方の移動の課題を解決したい！';
+    myDreamElement.appendChild(newElement);
+    buttonMyDreamElement.disabled = "disabled";
+}
 
-      <button id=buttonIssue type="button" onclick = "clickIssue()">
-        ある方の課題
-      </button>
-      <h3 id="issue"></h3>
+function clickTitle(){
+    const titleElement = document.getElementById('title');
+    const buttonTitleElement = document.getElementById('buttonTitle');
+    const newImgTitleElement = document.createElement('img');
+    newImgTitleElement.src = "title.png";
+    titleElement.appendChild(document.createElement("br"));
+    titleElement.appendChild(newImgTitleElement);
+    buttonTitleElement.disabled = "disabled";
+}
 
-      <button id=buttonProduct type="button" onclick = "clickProduct()">
-        解決策
-      </button>
-      <h3 id="product"></h3>
 
-  </p>
+function clickMyPlan(){
+    const myPlanElement = document.getElementById('myPlan');
+    const buttonMyPlanElement = document.getElementById('buttonMyPlan');
+    const newImgMyPlanElement = document.createElement('img');
+    newImgMyPlanElement.src = "patientsNumber.png";
+    myPlanElement.appendChild(document.createElement("br"));
+    myPlanElement.appendChild(newImgMyPlanElement);
+    buttonMyPlanElement.disabled = "disabled";
+}
 
-  <p>
-    <h2>実証実験前後の比較</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/a3BrOBu6HMk?start=128" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </p>
 
-  <p>
-    <h2>実証実験後の動画</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/OJQHq14ucZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </p>
+function clickIssue(){
+    const issueElement = document.getElementById('issue');
+    const buttonIssueElement = document.getElementById('buttonIssue');
+    const newImgIssueElement = document.createElement('img');
+    newImgIssueElement.src = "issue.png";
+    issueElement.appendChild(document.createElement("br"));
+    issueElement.appendChild(newImgIssueElement);
+    buttonIssueElement.disabled = "disabled";
+}
 
-  <p>
-    <h2>皆さんにお伝えしたいこと</h2>
-    <h3 id="final"></h3>
-    <button id=buttonFinal type="button" onclick = "clickFinal()">
-        最後に
-      </button>
-  </p>
 
-</body>
+function clickProduct(){
+    const productElement = document.getElementById('product');
+    const buttonProductElement = document.getElementById('buttonProduct');
+    const newImgProductElement = document.createElement('img');
+    newImgProductElement.src = "product.png";
+    productElement.appendChild(document.createElement("br"));
+    productElement.appendChild(newImgProductElement);
+    buttonProductElement.disabled = "disabled";
+}
 
-</html>
+
+
+function clickFinal(){
+    const finalElement = document.getElementById('final');
+    const buttonFinalElement = document.getElementById('buttonFinal');
+    const newElement = document.createElement('h3');
+    newElement.innerHTML = '実現を待ってくれている多くのために、内製開発（現状は委託開発メイン）でスピーディーに改善を進めたいものの、<br>まだまだスキルと時間が足りず困っています。<br>もし共感した、興味あるなどあれば、人事面含め全力でサポートしますので、いつでも連絡ください！';
+    finalElement.appendChild(newElement);
+    buttonFinalElement.disabled = "disabled";
+}
+
