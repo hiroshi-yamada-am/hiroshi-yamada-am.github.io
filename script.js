@@ -36,10 +36,14 @@ function clickMyDream(){
 function clickTitle(){
     const titleElement = document.getElementById('title');
     const buttonTitleElement = document.getElementById('buttonTitle');
-    const newImgTitleElement = document.createElement('img');
-    newImgTitleElement.src = "title.png";
+    const newImgTitleElement1 = document.createElement('img');
+    const newImgTitleElement2 = document.createElement('img');
+    newImgTitleElement1.src = "title.png";
+    newImgTitleElement2.src = "symptoms.png";
     titleElement.appendChild(document.createElement("br"));
-    titleElement.appendChild(newImgTitleElement);
+    titleElement.appendChild(newImgTitleElement1);
+    titleElement.appendChild(document.createElement("br"));
+    titleElement.appendChild(newImgTitleElement2);
     buttonTitleElement.disabled = "disabled";
 }
 
@@ -47,10 +51,14 @@ function clickTitle(){
 function clickMyPlan(){
     const myPlanElement = document.getElementById('myPlan');
     const buttonMyPlanElement = document.getElementById('buttonMyPlan');
-    const newImgMyPlanElement = document.createElement('img');
-    newImgMyPlanElement.src = "patientsNumber.png";
+    const newImgMyPlanElement1 = document.createElement('img');
+    const newImgMyPlanElement2 = document.createElement('img');
+    newImgMyPlanElement1.src = "patientsNumber.png";
+    newImgMyPlanElement2.src = "life.png";
     myPlanElement.appendChild(document.createElement("br"));
-    myPlanElement.appendChild(newImgMyPlanElement);
+    myPlanElement.appendChild(newImgMyPlanElement1);
+    myPlanElement.appendChild(document.createElement("br"));
+    myPlanElement.appendChild(newImgMyPlanElement2);
     buttonMyPlanElement.disabled = "disabled";
 }
 
@@ -69,10 +77,14 @@ function clickIssue(){
 function clickProduct(){
     const productElement = document.getElementById('product');
     const buttonProductElement = document.getElementById('buttonProduct');
-    const newImgProductElement = document.createElement('img');
-    newImgProductElement.src = "product.png";
+    const newImgProductElement1 = document.createElement('img');
+    const newImgProductElement2 = document.createElement('img');
+    newImgProductElement1.src = "product.png";
+    newImgProductElement2.src = "productFunction.png";
     productElement.appendChild(document.createElement("br"));
-    productElement.appendChild(newImgProductElement);
+    productElement.appendChild(newImgProductElement1);
+    productElement.appendChild(document.createElement("br"));
+    productElement.appendChild(newImgProductElement2);
     buttonProductElement.disabled = "disabled";
 }
 
@@ -82,8 +94,11 @@ function clickFinal(){
     const finalElement = document.getElementById('final');
     const buttonFinalElement = document.getElementById('buttonFinal');
     const newElement = document.createElement('h3');
-    newElement.innerHTML = '実現を待ってくれている多くのために、内製開発（現状は委託開発メイン）でスピーディーに改善を進めたいものの、<br>まだまだスキルと時間が足りず困っています。<br>もし共感した、興味あるなどあれば、人事面含め全力でサポートしますので、いつでも連絡ください！';
+    const newImgFinalElement = document.createElement('img');
+    newElement.innerHTML = '実現を待ってくれている多くの方のために、内製開発（現状は委託開発メイン）でスピーディーに改善を進めたいものの、<br>まだまだスキルと時間が足りず困っています。<br>もし共感した、興味あるなどあれば、いつでもお気軽にご連絡ください！';
+    newImgFinalElement.src = "dream.png";
     finalElement.appendChild(newElement);
+    finalElement.appendChild(newImgFinalElement);
     buttonFinalElement.disabled = "disabled";
 }
 
