@@ -5,6 +5,7 @@ body {
 img {
     width: 1152px;
     height: 648px;
+    margin-bottom:100px;
 }
 
 h1{
@@ -20,6 +21,7 @@ h2{
 
 h3{
     font-size:16pt;
-    font-weight:bold;
+    /* font-weight:bold; */
+    color: #333333;
 }
 
